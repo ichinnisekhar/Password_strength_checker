@@ -9,14 +9,14 @@ while True:
     has_digit = False
     has_special = False
 
-    # Check length
+    # Checking length
     if len(pw) >= 8:
         strength_score += 1
     else:
         print("Password should contain at least 8 characters.")
         continue
 
-    # Check each character
+    # Checking each character
     for ch in pw:
         if ch.isupper():
             has_upper = True
@@ -27,7 +27,7 @@ while True:
         else:
             has_special = True
 
-    # Increase score
+    # Password strength score
     if has_upper:
         strength_score += 1
 
